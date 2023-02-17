@@ -20,11 +20,10 @@ RUN apt-get update -qq && \
   rm /etc/apt/apt.conf.d/default-release && \
   rm -rf /var/lib/apt/lists/*
 
-WORKDIR /libvips
-
 ENV LIBVIPS_VERSION=$LIBVIPS_VERSION
 
 RUN wget -O /tmp/libvips.tar.gz https://github.com/libvips/libvips/releases/download/v$LIBVIPS_VERSION/vips-$LIBVIPS_VERSION.tar.xz && \
+  mkdir /libvips && cd /libvips && \
   tar xf /tmp/libvips.tar.gz --strip-components=1 && \
   meson setup build-dir --buildtype=release && \
   cd build-dir && \
@@ -32,4 +31,5 @@ RUN wget -O /tmp/libvips.tar.gz https://github.com/libvips/libvips/releases/down
   ninja test && \
   ninja install && \
   ldconfig && \
-  rm /tmp/libvips.tar.gz
+  cd .. && \
+  rm -rf /libvips /tmp/libvips.tar.gz
