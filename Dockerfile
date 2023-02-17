@@ -5,7 +5,7 @@ FROM node:$NODE_VERSION-bullseye
 ARG LIBVIPS_VERSION
 
 RUN apt-get update -qq && \
-  apt-get install -qqy wget libc6=2.31-13+deb11u5 build-essential libglib2.0-dev libgirepository1.0-dev meson \
+  apt-get install -qqy python git wget libc6=2.31-13+deb11u5 build-essential libglib2.0-dev libgirepository1.0-dev meson \
   libfftw3-dev libexif-dev libjpeg62-turbo-dev \
   libwebp-dev libtiff5-dev libpng-dev \
   libheif-dev libexpat1-dev liborc-0.4-dev \
