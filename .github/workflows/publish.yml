@@ -9,6 +9,8 @@ on:
       - main
     paths-ignore:
       - README.md
+  schedule:
+    - cron: "0 1 */1 * *" # 1:00 AM every day
 
 env:
   IMAGE_NAME: "shivjm/node-libvips"
