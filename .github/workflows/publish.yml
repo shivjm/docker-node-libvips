@@ -21,7 +21,7 @@ jobs:
     strategy:
       matrix:
         node: [14, 16, 17, 18, 19]
-        libvips: [8.14.1]
+        libvips: [8.14.1, 8.14.2]
     env:
       IMAGE_TAG: "node${{ matrix.node }}-libvips${{ matrix.libvips }}"
     steps:
