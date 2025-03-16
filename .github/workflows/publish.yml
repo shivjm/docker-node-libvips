@@ -32,6 +32,9 @@ jobs:
             8.15.2,
             8.15.3,
             8.15.4,
+            8.15.5,
+            8.16.0,
+            8.16.1,
           ]
     env:
       IMAGE_TAG: "node${{ matrix.node }}-libvips${{ matrix.libvips }}"
