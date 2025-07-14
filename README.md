@@ -14,7 +14,7 @@ https://github.com/shivjm/docker-node-libvips/issues/
 
 ## Tags
 
-<code>node<var>N</var>-libvips<var>V</var></code>, where <var>N</var> is the Node.js major version number (14, 16, 17, 18, or 19) and <var>V</var> is the libvips version (currently only 8.14.1). For example, to use Node.js v14 with libvips v8.14.1, use the `shivjm/node-libvips:node14-libvips8.14.1` image. No `latest` image is provided.
+<code>node<var>N</var>-libvips<var>V</var></code>, where <var>N</var> is the Node.js major version number (14, 16, 17, 18, 19, 20, or 22) and <var>V</var> is the libvips version (currently only 8.14.1). For example, to use Node.js v14 with libvips v8.14.1, use the `shivjm/node-libvips:node14-libvips8.14.1` image. No `latest` image is provided.
 
 [See the full list of tags on Docker Hub.](https://hub.docker.com/repository/docker/shivjm/node-libvips/tags?page=1&ordering=last_updated)
 
